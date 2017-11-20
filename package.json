@@ -1,0 +1,25 @@
+{
+  "name": "is-supported",
+  "version": "0.0.0",
+  "description": "Checks if a ECMAScript feature is supported or not. Checks async, generator and more...",
+  "main": "isSupported.js",
+  "scripts": {
+    "test": "mocha --reporter lagoon-reporter tests/*.spec.js"
+  },
+  "keywords": [
+    "is",
+    "supported",
+    "ecma",
+    "isasync",
+    "async",
+    "async-supported",
+    "is-async-supported"
+  ],
+  "author": "Andi Heinkelein <andifeind@noname-media.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "inspect.js": "1.9.0",
+    "lagoon-reporter": "0.3.4",
+    "mocha": "4.0.1"
+  }
+}
