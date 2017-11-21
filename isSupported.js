@@ -2,16 +2,16 @@ function isSupported (test) {
   try {
     eval(test)
     return true
-  } catch () {
+  } catch (err) {
     return false
   }
 }
 
 module.exports = {
-  get asyncSupported = () {
+  get asyncSupported () {
     return isSupported('(async function() {})')
   },
-  get generatorSupported = () {
+  get generatorSupported () {
     return isSupported('(function * () {})')
   }
 }
