@@ -1,7 +1,9 @@
 isSupported
 ===========
 
-Checks if new ECMAScript features are supported or not.
+[![Build Status](https://travis-ci.org/Andifeind/is-supported.svg?branch=develop)](https://travis-ci.org/Andifeind/is-supported)
+
+Checks if ECMAScript feature is supported or not.
 
 ```
 const is = require('is-supported')
