@@ -1,13 +1,14 @@
 const inspect = require('inspect.js')
-const sinon = require('sinon')
-inspect.useSinon(sinon)
-
-const inspect = require('inspect.js')
+const is = require('../')
 
 describe('Module', () => {
-  describe('asyncSupported', () => {
+  describe('getters', () => {
     it('should return a boolean if async is supported or not', () => {
-      
+      inspect(is.asyncSupported).isBoolean()
+    })
+
+    it('should return a boolean if generators are supported or not', () => {
+      inspect(is.generatorSupported).isBoolean()
     })
   })
 })

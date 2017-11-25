@@ -1,6 +1,6 @@
 function isSupported (test) {
   try {
-    eval(test)
+    eval(test) // eslint-disable-line no-eval
     return true
   } catch (err) {
     return false
